@@ -25,12 +25,12 @@ int main(int argc, char *argv[])
 		{
 			if (isatty(STDOUT_FILENO))
 					write(STDOUT_FILENO, "\n", 1);
-			return (0);
+			return (status);
 		}
 		instructions = token_generator(inputs);
 		if (!instructions) /* token not NULL*/
 			continue;
-		status = empty_input(instructions, argv, argc);
+		status = empty_input(instructions, argv, argc, status);
 	}
-	return (0);
+	return (status);
 }

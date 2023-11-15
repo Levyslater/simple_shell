@@ -8,15 +8,14 @@
  * Return: status
 */
 
-int empty_input(char **command, char **argv, int count)
+int empty_input(char **command, char **argv, int count, int status)
 {
 	char *appended;
-	int status = 0;
 
 	if (_strcmp(command[0], "exit") == 0)
 	{
 		_free_memory(command);
-		exit(0);
+		exit(status);
 	}
 	else if (_strcmp(command[0], "env") == 0)
 	{

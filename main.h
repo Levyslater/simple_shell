@@ -29,7 +29,7 @@ char *int_str(int str);
 void print_env(void);
 char *_path_value(const char *path);
 char *_input_path(char *input);
-int empty_input(char **command, char **argv, int count);
+int empty_input(char **command, char **argv, int count, int status);
 char **token_generator(char *arguments);
 
 /*string literals*/
