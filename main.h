@@ -25,9 +25,9 @@ void _free_memory(char **vector);
 int _execute(char *appended, char **command);
 void rev_str(char *str, int len);
 char *int_str(int str);
-void print_env();
-char *_path_value( const char *path);
-char * _input_path(char *input);
+void print_env(void);
+char *_path_value(const char *path);
+char *_input_path(char *input);
 int empty_input(char **command, char **argv, int count);
 char **token_generator(char *arguments);
 
