@@ -34,5 +34,5 @@ int _execute(char *appended, char **command)
 		_free_memory(command);
 		free(appended);
 	}
-	return (WIFEXITED(status));
+	return (WEXITSTATUS(status));
 }
