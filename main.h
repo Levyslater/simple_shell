@@ -9,9 +9,10 @@
 #include <sys/stat.h>
 #include <string.h>
 #include <fcntl.h>
+#include <errno.h>
 
 /* Macros*/
-#define SIZE 64
+#define SIZE 128
 #define DELIM " \t\n"
 extern char **environ;
 

@@ -22,7 +22,11 @@ int main(int argc, char *argv[])
 		inputs = read_inputs();
 
 		if (inputs == NULL)
-			return (status);
+		{
+			if (isatty(STDOUT_FILENO))
+					write(STDOUT_FILENO, "\n", 1);
+			return (0);
+		}
 		instructions = token_generator(inputs);
 		if (!instructions) /* token not NULL*/
 			continue;
