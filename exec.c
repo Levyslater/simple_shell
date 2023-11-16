@@ -18,7 +18,6 @@ int _execute(char *appended, char **command)
 	{
 		if (execve(appended, command, environ) == -1) /*use extern*/
 		{
-			
 			_free_memory(command);
 			perror("execve");
 		}
