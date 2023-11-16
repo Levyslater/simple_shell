@@ -4,6 +4,7 @@
  * empty_input - checks if input is null
  * @command: user inputs
  * @argv: input vector
+ * @status: exit info
  * @count: line number
  * Return: status
 */

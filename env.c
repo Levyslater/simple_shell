@@ -13,7 +13,7 @@ char *_path_value(const char *path)
 
 	for (i = 0; environ[i]; i++)
 	{
-		if (strncmp(environ[i], path, len) == 0 && environ[i][len] == '=')
+		if (_strncmp(environ[i], path, len) == 0 && environ[i][len] == '=')
 		{
 			len += 1;
 			return (environ[i] + len);

@@ -39,5 +39,5 @@ char *dup_str(const char *str);
 char *_strcat(char *dest, char *src);
 int _strcspn(char *s, char *accept);
 int _strlen(const char *src);
-
+int _strncmp(const char *s1, const char *s2, int len);
 #endif

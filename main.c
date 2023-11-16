@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		if (inputs == NULL)
 		{
 			if (isatty(STDOUT_FILENO))
-					write(STDOUT_FILENO, "\n", 1);
+				write(STDOUT_FILENO, "\n", 1);
 			return (status);
 		}
 		instructions = token_generator(inputs);
