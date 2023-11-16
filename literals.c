@@ -12,7 +12,7 @@ char *dup_str(const char *str)
 
 	int len = _strlen(str);
 
-	ptr = malloc(sizeof(char) * (len + 1);
+	ptr = malloc(sizeof(char) * (len + 1));
 
 	if (ptr)
 	{
