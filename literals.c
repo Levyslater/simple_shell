@@ -10,9 +10,9 @@ char *dup_str(const char *str)
 {
 	char *ptr;
 
-	int len = _strlen(str) + 1;
+	int len = _strlen(str);
 
-	ptr = malloc(sizeof(char) * len);
+	ptr = malloc(sizeof(char) * (len + 1);
 
 	if (ptr)
 	{
